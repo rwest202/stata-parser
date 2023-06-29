@@ -10,9 +10,14 @@
                    "stataread.h",
                    "swap_bytes.h",
                    "stata.h"],
-        "libraries" : [ '<!(pwd)/libjansson.a'],
-        "ldflags" : ['-Wl,-rpath,<!(pwd)'],
-        "cflags" : [ "-fPIC" ],
+      "include_dirs": [
+        '<!(pkg-config --cflags-only-I jansson | cut -c 3-)',
+      ],
+      "libraries": [
+        "<!(pkg-config --libs jansson)",
+      ],
+      "ldflags" : ['-Wl,-rpath,<!(pwd)'],
+      "cflags" : ['-fPIC'],
     },
     {
         "target_name" : "copy_module",

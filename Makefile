@@ -16,7 +16,7 @@ $(EXECUTABLE): $(OBJECTS)
 		$(CC) $(CFLAGS) $< -o $@
 
 demo:
-	${CC} -o  demo demo.c -g `pkg-config --cflags --libs jansson` ./libstata.so
+	${CC} -o  demo demo.c -g `pkg-config --cflags --libs jansson` ./stata.so
 
 clean:
 		rm -rf *.o 
