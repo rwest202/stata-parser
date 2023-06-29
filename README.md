@@ -1,4 +1,4 @@
-# jstata
+# Stata Parser
 NodeJS module to read and write Stata files
 
 *It depends on jansson-dev. A static copy is available as part of the repository.*
