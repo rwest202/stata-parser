@@ -1,6 +1,6 @@
 {
   "name": "stata-parser",
-  "version": "0.1.3",
+  "version": "2.0.0",
   "description": "NodeJS Stata Module",
   "main": "index.js",
   "dependencies": {},
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/maplechori/jstata.git"
+    "url": "git://github.com/rwest202/stata-parser.git"
   },
   "author": "Adrian Montero <maplechori@gmail.com>, Ryan Westerberg <ryanwesterberg@gmail.com>",
   "license": "GPL-2.0-or-later",
